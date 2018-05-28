@@ -7,8 +7,20 @@ node{
        branch: "master"
       )
    }
-   stage('Restore Package')
-   {
-       dotnet restore
-   }
+   stage ('Restore Dependecies') {
+        PowerShell("dotnet restore")
+    }
+    
+    stage ('Build for Error Checks') {
+      
+    }
+    
+    stage ('Publish Binaries') {
+        
+    }
+    
+    stage ('Build Docker Image') {
+       
+    }
+}
 }
