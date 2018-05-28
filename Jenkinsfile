@@ -8,7 +8,7 @@ node{
       )
    }
    stage ('Restore Dependecies') {
-        PowerShell("dotnet restore")
+        bat 'dotnet restore'
     }
     
     stage ('Build for Error Checks') {
