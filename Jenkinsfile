@@ -37,7 +37,7 @@ node{
   
   stage('Run Docker Machine')
   {
-     bat 'docker run --rm -it maninetcore/api-gen'
+     sh 'docker run --rm -it maninetcore/api-gen'
   }
 
 }
