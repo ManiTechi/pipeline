@@ -31,7 +31,7 @@ node{
      //     bat 'docker push maninetcore/api-gen'
        // }
     
-     bat 'docker login --manidockerhub abc --password Test!10051982'
+     bat 'docker login --username manidockerhub --password Test!10051982'
   }
 
 }
