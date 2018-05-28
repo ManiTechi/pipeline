@@ -22,7 +22,7 @@ node{
     }
     
     stage ('Build Docker Image') {
-       bat 'docker build -t maninetcore:api-gen'
+       bat 'docker build -t maninetcore/api-gen .'
     }
     
   stage('Push Docker Image')
