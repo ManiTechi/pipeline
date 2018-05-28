@@ -1,0 +1,10 @@
+node{
+  stages('SCM Pull')
+  {
+       git(
+       url: 'git@github.com<repo_name>.git',
+       credentialsId: 'xpc',
+       branch: "${branch}"
+      )
+   }
+}
