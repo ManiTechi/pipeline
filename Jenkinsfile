@@ -33,11 +33,12 @@ node{
     
      bat 'docker login --username manidockerhub --password Test!10051982'
      bat 'docker push maninetcore/api-gen'
+     bat  'docker run --rm -it maninetcore/api-gen'
   }
   
   stage('Run Docker Machine')
   {
-     sh 'docker run --rm -it maninetcore/api-gen'
+     //bat  'docker run --rm -it maninetcore/api-gen'
   }
 
 }
