@@ -1,5 +1,5 @@
 node{
-  stages('SCM Pull')
+  stage('SCM Pull')
   {
        git(
        url: 'https://github.com/ManiTechi/pipeline.git',
