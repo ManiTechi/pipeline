@@ -28,7 +28,7 @@ node{
   stage('Push Docker Image')
   {
      withDockerRegistry([ credentialsId: "034ea55d-85e4-42ca-96d5-69a268bfbcdb", url: "https://hub.docker.com" ]) {
-          bat 'docker push maninetcore:api-gen'
+          bat 'docker push maninetcore/api-gen'
         }
   }
 
