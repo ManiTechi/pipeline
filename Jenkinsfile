@@ -22,5 +22,5 @@ node{
     stage ('Build Docker Image') {
        
     }
-}
+
 }
