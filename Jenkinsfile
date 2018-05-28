@@ -12,10 +12,12 @@ node{
     }
     
     stage ('Build for Error Checks') {
+       bat 'dotnet build'
       
     }
     
     stage ('Publish Binaries') {
+       bat 'dotnet publish'
         
     }
     
