@@ -7,4 +7,8 @@ node{
        branch: "master"
       )
    }
+   stage('Restore Package')
+   {
+       dotnet restore
+   }
 }
